@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/estudo-AEM-netbiis",
+        "create path (nt:unstructured) /content/dam/estudo-AEM-netbiis/jcr:content",
+        "set properties on /content/dam/estudo-AEM-netbiis/jcr:content\n  set cq:conf{String} to /conf/estudo-AEM-netbiis\n  set jcr:title{String} to \"Estudos AEM Netbiis\"\nend"
+    ]
+}
