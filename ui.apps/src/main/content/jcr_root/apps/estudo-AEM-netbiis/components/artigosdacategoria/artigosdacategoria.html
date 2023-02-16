@@ -1,8 +1,17 @@
 <div 
         class="cmp-artigos-cat"
+        data-sly-use.model="com.netbiis.aem.estudos.core.models.CategoryArticles"
         >
     <div class="cmp-artigos-cat__item">
-        <h1 class="cmp-artigos-cat__title">artigos</h1>
-        <p class="cmp-artigos-cat__text">relacionados</p>
+        <h1 class="cmp-artigos-cat__title">Nesta categoria</h1>
+        <h1>Sibling titles:</h1>
+        <ul data-sly-list.sibling="${model.siblingsContent}">
+            <li>
+                <img src="${sibling.image}">
+                <h3>${sibling.title}</h3>
+                <p>${sibling.bodyText}</p> 
+            </li>
+        </ul>
+
     </div>
 </div>
