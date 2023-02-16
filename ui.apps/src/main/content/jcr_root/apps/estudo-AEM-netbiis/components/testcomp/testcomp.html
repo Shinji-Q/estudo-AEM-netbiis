@@ -1,0 +1,14 @@
+<div 
+        class="cmp-test-component"
+        data-sly-use.testmodel="com.netbiis.aem.estudos.core.models.TestComponentModel"
+        >
+    <div class="cmp-test-component__item">
+        <h1 class="cmp-test-component__title">Componente puramente</h1>
+        <p class="cmp-test-component__text">para efeitos demosntrativos</p>
+    </div>
+    <div class="cmp-test-component__item" data-sly-test="${properties.title}">
+        <h1 class="cmp-test-component__title">${properties.title}</h1>
+        <p>teste pra ver se essa div ainda funciona sem valores</p>
+        <p>${testmodel.message}</p>
+    </div>
+</div>

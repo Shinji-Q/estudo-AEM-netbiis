@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-15T18:19:03.524-03:00"
+        cq:lastModifiedBy="admin"
+        cq:redirectTarget="/content/estudo-AEM-netbiis/br/pt/home"
+        cq:template="/conf/estudo-AEM-netbiis/settings/wcm/templates/artigo"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="pt"
+        sling:resourceType="estudo-AEM-netbiis/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="estudo-AEM-netbiis/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2023-02-15T17:50:40.641-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="estudo-AEM-netbiis/components/container"
+                layout="responsiveGrid">
+                <container_828942006
+                    jcr:lastModified="{Date}2023-02-15T17:43:59.310-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/container">
+                    <container
+                        jcr:lastModified="{Date}2023-02-15T17:54:10.776-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/container"/>
+                </container_828942006>
+                <container
+                    jcr:lastModified="{Date}2023-02-15T17:42:01.890-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/container">
+                    <title
+                        jcr:lastModified="{Date}2023-02-15T17:55:36.492-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Default Title"
+                        sling:resourceType="estudo-AEM-netbiis/components/title"/>
+                    <text
+                        jcr:lastModified="{Date}2023-02-15T17:56:32.589-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/text"
+                        text="&lt;p>Defautl Text bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2023-02-15T18:19:03.519-03:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="true"/>
+    </jcr:content>
+    <home/>
+    <categorias/>
+</jcr:root>

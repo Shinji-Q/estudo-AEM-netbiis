@@ -29,6 +29,7 @@ import com.netbiis.aem.estudos.core.testcontext.AppAemContext;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
 /**
  * Simple JUnit test verifying the HelloWorldModel
  */
@@ -38,6 +39,7 @@ class HelloWorldModelTest {
     private final AemContext context = AppAemContext.newAemContext();
 
     private HelloWorldModel hello;
+
 
     private Page page;
     private Resource resource;
@@ -52,6 +54,7 @@ class HelloWorldModelTest {
 
         // create sling model
         hello = resource.adaptTo(HelloWorldModel.class);
+
     }
 
     @Test

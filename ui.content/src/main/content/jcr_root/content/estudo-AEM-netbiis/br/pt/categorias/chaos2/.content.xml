@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-16T10:55:42.516-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/estudo-AEM-netbiis/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="chaos2"
+        sling:resourceType="estudo-AEM-netbiis/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="estudo-AEM-netbiis/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="estudo-AEM-netbiis/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/container"
+                    layout="responsiveGrid"/>
+                <title
+                    jcr:lastModified="{Date}2023-02-15T14:46:38.124-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/title"/>
+            </container>
+        </root>
+    </jcr:content>
+    <art5/>
+</jcr:root>

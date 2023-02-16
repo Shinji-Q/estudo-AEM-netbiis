@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="Estudos AEM Netbiis"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2023-02-16T11:21:05.993-03:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/estudo-AEM-netbiis/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="estudo-AEM-netbiis/components/page"
-    >
+        pageTitle="Estudos AEM Netbiis">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="estudo-AEM-netbiis/components/container"
@@ -24,59 +25,85 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="estudo-AEM-netbiis/components/container"
                     layout="responsiveGrid">
-                    <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                    <testcomp
+                        jcr:lastModified="{Date}2023-02-16T09:39:15.916-03:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="estudo-AEM-netbiis/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"
+                        title="titlo"/>
+                    <artigosdacategoria
+                        jcr:lastModified="{Date}2023-02-16T11:21:05.990-03:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="estudo-AEM-netbiis/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
-                    <teaser_copy_1579324932
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="estudo-AEM-netbiis/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy_1579324932>
-                    <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="estudo-AEM-netbiis/components/helloworld"
-                        text="lalala :)"/>
+                        sling:resourceType="estudo-AEM-netbiis/components/artigosdacategoria"/>
                 </container>
+                <Copy_x0020_of_x0020_container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/container"
+                    layout="responsiveGrid">
+                    <recommendationposts
+                        jcr:lastModified="{Date}2023-02-15T14:49:32.634-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/recommendationposts"/>
+                    <recommendationposts_1845907043
+                        jcr:lastModified="{Date}2023-02-15T14:49:43.073-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/recommendationposts"/>
+                    <relatedtopics
+                        jcr:lastModified="{Date}2023-02-15T14:49:50.588-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/relatedtopics"/>
+                    <recommendationposts_1980759353
+                        jcr:lastModified="{Date}2023-02-15T14:58:56.317-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/recommendationposts"/>
+                    <recommendationposts_530491471
+                        jcr:lastModified="{Date}2023-02-15T15:00:39.267-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/recommendationposts"/>
+                    <recommendationposts_1075385504
+                        jcr:lastModified="{Date}2023-02-15T15:00:59.589-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/recommendationposts"/>
+                    <testcomp
+                        jcr:lastModified="{Date}2023-02-15T16:40:41.434-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"
+                        title="Certamente um título"/>
+                    <testcomp_2055034382
+                        jcr:lastModified="{Date}2023-02-15T16:41:42.636-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"
+                        title="essa fera aí meu"/>
+                    <testcomp_2079152174
+                        jcr:lastModified="{Date}2023-02-15T16:42:37.969-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"/>
+                    <testcomp_673192304
+                        jcr:lastModified="{Date}2023-02-16T09:20:21.530-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"/>
+                    <testcomp_658125243
+                        jcr:lastModified="{Date}2023-02-16T09:20:30.390-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"/>
+                    <testcomp_1370407167
+                        jcr:lastModified="{Date}2023-02-16T09:25:00.191-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="estudo-AEM-netbiis/components/testcomp"/>
+                </Copy_x0020_of_x0020_container>
             </container>
         </root>
     </jcr:content>

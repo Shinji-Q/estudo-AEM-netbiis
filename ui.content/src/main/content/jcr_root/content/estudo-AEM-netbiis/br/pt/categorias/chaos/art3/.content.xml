@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-02-16T10:54:54.469-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/estudo-AEM-netbiis/settings/wcm/templates/artigo"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="art3"
+        sling:resourceType="estudo-AEM-netbiis/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="estudo-AEM-netbiis/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2023-02-16T10:35:31.269-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="estudo-AEM-netbiis/components/container"
+                accessibilityLabel="artigo"
+                id="article"
+                layout="responsiveGrid">
+                <text
+                    jcr:lastModified="{Date}2023-02-16T10:39:41.093-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/text"
+                    id="bodytext"
+                    text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id velit sed urna congue tincidunt vel eu leo. Duis tristique ac enim pretium tempor. In vel dignissim nibh, id mattis ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eget pretium sapien. Nullam bibendum fermentum fermentum. Vestibulum nibh odio, pretium a lectus quis, tempus consequat ante. Mauris eu neque pulvinar, laoreet ante sit amet, lobortis odio. In non nunc pulvinar, aliquet quam quis, sodales sapien. Donec dictum, tortor eu lobortis mollis, ipsum dui sodales urna, eget facilisis est enim maximus libero.&lt;/p>&#xd;&#xa;&lt;p>Etiam blandit sem vel diam viverra vulputate. Quisque at risus nec nulla accumsan faucibus non et dolor. Sed luctus ex nunc, ac ullamcorper nisi venenatis ut. Aliquam vulputate pellentesque euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, risus id tempor tincidunt, turpis quam scelerisque erat, eget porta mi erat at erat. Sed mollis est dui, eget volutpat arcu vehicula sit amet. Donec ipsum augue, congue sed aliquet quis, euismod semper lacus. Donec vestibulum interdum elementum. Nunc quis accumsan arcu. Aenean lacinia lacus eget malesuada placerat. Nunc ac sapien laoreet, ultricies odio quis, dictum ex. Morbi purus tellus, laoreet id sodales non, porta id sem.&lt;/p>&#xd;&#xa;&lt;p>Sed pulvinar suscipit velit quis vehicula. Praesent in bibendum elit. Suspendisse commodo tortor nulla, nec interdum ex ultrices id. Cras accumsan libero ac lacinia facilisis. Nunc sed luctus ligula. Duis non libero ultrices, sagittis ante ut, aliquet lectus. Fusce interdum nibh ipsum, a porttitor tortor fermentum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce feugiat nisi risus, eu malesuada augue pulvinar vitae. Mauris volutpat, leo a consectetur vehicula, velit sapien laoreet nisi, non vestibulum neque diam nec enim. Ut eu euismod leo.&lt;/p>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur purus sit amet orci dapibus, eu fermentum nulla vehicula. In sapien ipsum, interdum in mi et, euismod pellentesque sapien. Duis rutrum dolor et gravida commodo. Quisque ultricies mi a turpis fringilla tristique. Nunc enim nisl, posuere vitae consectetur id, suscipit sit amet sem. Phasellus eu enim vitae dolor dapibus gravida. Maecenas pretium egestas porta. Duis in enim finibus, auctor mi vitae, facilisis justo. Etiam vitae semper libero. In quis tellus eu orci suscipit condimentum in at magna. Curabitur ut accumsan dui.&lt;/p>&#xd;&#xa;&lt;p>Praesent condimentum est a velit finibus, quis iaculis erat pretium. Vestibulum in pretium neque. Cras vitae libero ut ipsum varius euismod. Praesent eu leo pellentesque, ultricies mauris quis, auctor nisi. Sed fringilla sem at felis sagittis vestibulum. Vestibulum finibus pellentesque neque, sit amet malesuada urna. Nullam sollicitudin elementum lectus, eget finibus enim tempus eget. Etiam interdum, nunc in volutpat sodales, massa leo tincidunt tortor, ac mattis nisl enim eget orci. Duis malesuada erat et quam consectetur dictum. Morbi efficitur sagittis rhoncus. Pellentesque ac urna eu velit bibendum feugiat posuere non diam. Etiam ac eros et ante euismod iaculis. Curabitur eget enim sit amet ipsum ultricies egestas. Praesent rutrum velit vitae efficitur maximus.&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <title
+                    jcr:lastModified="{Date}2023-02-16T10:54:54.465-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Title 3"
+                    sling:resourceType="estudo-AEM-netbiis/components/title"
+                    id="title"
+                    linkTarget="_self"
+                    type="h2"/>
+                <image
+                    jcr:lastModified="{Date}2023-02-16T10:37:40.797-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="estudo-AEM-netbiis/components/image"
+                    alt="image"
+                    altValueFromDAM="false"
+                    disableLazyLoading="false"
+                    displayPopupTitle="true"
+                    fileName="Captura de Tela (1).png"
+                    id="banner"
+                    imageFromPageImage="false"
+                    isDecorative="false"
+                    linkTarget="_self">
+                    <file/>
+                </image>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
