@@ -4,10 +4,9 @@
         >
     <div class="cmp-artigos-cat__item">
         <h1 class="cmp-artigos-cat__title">Nesta categoria</h1>
-        <h1>Sibling titles:</h1>
         <ul data-sly-list.sibling="${model.siblingsContent}">
             <li>
-                <img src="${sibling.image}">
+                <img style="height: 100px" src="${sibling.image}"/>
                 <h3>${sibling.title}</h3>
                 <p>${sibling.bodyText}</p> 
             </li>

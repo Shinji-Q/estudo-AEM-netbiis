@@ -10,9 +10,13 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Via;
 import org.apache.sling.models.annotations.injectorspecific.Self;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+
+
 
 import com.day.cq.wcm.api.PageManager;
 import com.adobe.cq.wcm.core.components.models.Image;
@@ -24,6 +28,7 @@ import javax.annotation.PostConstruct;
 @Model(adaptables=SlingHttpServletRequest.class,
         defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
 public class CategoryArticles {
+    private static final Logger logger = LoggerFactory.getLogger(CategoryArticles.class);
 
     @Self
     private SlingHttpServletRequest request;
@@ -36,7 +41,9 @@ public class CategoryArticles {
     private Resource resource; //current component resource
 
     @PostConstruct
+
     protected void init(){
+        logger.info("\n================iniciado================");
 
         message = "iniciado, meu compatriota";
 
@@ -71,26 +78,19 @@ public class CategoryArticles {
         //TODO organizar por data e selecionar os 4 mais recentes
         siblings.forEach((sibling)->{
             ArticleCardContent sc = new ArticleCardContent();
-
+            Resource titleResource = sibling.getContentResource("root/container/title");
+            Resource bodyTextResource =  sibling.getContentResource("root/container/text");
+            Resource imageResource = sibling.getContentResource("cq:featuredimage");
             // extraindo o conteúdo
             sc.setTitle(
-                sibling
-                .getContentResource("root/container/title")
-                .getValueMap()
-                .get("jcr:title", String.class)
+                titleResource.getValueMap().get("jcr:title", String.class)
             );
             sc.setBodyText(
-                sibling
-                .getContentResource("root/container/text")
-                .getValueMap()
-                .get("text", String.class)
+                bodyTextResource.getValueMap().get("text", String.class)
             );
-            //TODO descobrir como fazer as imagens funcionarem 
-            sc.setImage(
-                sibling
-                .getContentResource("root/container/image/file/jcr:content")
-                .getValueMap()
-                .get("jcr:data", Image.class)
+            sc.setImage( imageResource!=null ?
+                imageResource.getValueMap().get("fileReference",String.class)
+                : ""
             );
 
             siblingsContent.add(sc);

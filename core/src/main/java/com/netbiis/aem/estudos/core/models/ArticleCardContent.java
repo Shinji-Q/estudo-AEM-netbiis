@@ -10,7 +10,7 @@ import com.adobe.cq.wcm.core.components.models.Image;
 public class ArticleCardContent {
     private String title;
     private String bodyText;
-    private Image image;
+    private String image;
 
     public ArticleCardContent(){}
 
@@ -23,7 +23,7 @@ public class ArticleCardContent {
         this.bodyText = bodyText.substring(0, 144) + "...";
     }
 
-    public void setImage(Image image){
+    public void setImage(String image){
         this.image = image;
     }
 
@@ -35,7 +35,7 @@ public class ArticleCardContent {
         return bodyText;
     }
 
-    public Image getImage(){
+    public String getImage(){
         return image;
     }
     
