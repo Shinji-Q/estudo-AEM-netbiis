@@ -1,0 +1,5 @@
+<div data-sly-use.logic="apps.tcblog.components.otempo.relatedtopics.logic.RelatedTopicsLogic">
+    <h1>Tópicos relacionados:</h1>
+
+    <h4 data-sly-repeat="${logic.tagList}">${item ? item : "Test"}</h4>
+</div>

@@ -1,4 +1,4 @@
-package apps.tcblog.components.recommendationposts.logic;
+package apps.tcblog.components.otempo.recommendationposts.logic;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,11 +22,11 @@ public class RecommendationPostsLogic extends WCMUsePojo {
         postInfoList = new ArrayList<>();
 
         Page currentPage = getCurrentPage();
-    
+
         Page parentPage = currentPage.getParent();
     
         Iterator<Page> children = parentPage.listChildren();
-    
+
         while(children.hasNext()) {
             Page page = children.next();
 

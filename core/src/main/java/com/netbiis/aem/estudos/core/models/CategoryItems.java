@@ -6,4 +6,6 @@ import com.tcblog.core.models.support.PostInfo;
 
 public interface CategoryItems {
     public List<PostInfo> getItems();
+
+    public String getTitle();
 }

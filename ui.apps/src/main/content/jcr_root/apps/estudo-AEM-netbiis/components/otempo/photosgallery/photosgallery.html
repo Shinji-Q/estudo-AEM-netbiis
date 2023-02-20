@@ -1,0 +1,37 @@
+<div data-sly-use.photosGallery="com.tcblog.core.models.PhotosGallery"></div>
+
+<div class="cmp-photosgallery">
+    <h1> Galeria de fotos. </h1>
+
+    <div id="carouselControl" class="carousel slide" data-ride="carousel">
+        <div id="carousel-display-items" class="carousel-inner">
+
+            <div class="carousel-item" data-sly-repeat="${photosGallery.imagePaths}">
+                <img class="d-block w-100 h-200 carousel-image" src="${item}">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev carousel-control-icons" href="#carouselControl" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next carousel-control-icons" href="#carouselControl" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</div>
+
+<div id="show-image-view-mode">
+    <img id="image-view" src="">
+</div>
+
+<script>
+    function activateFistItemInCarrousel() {
+        let element = $('#carousel-display-items');
+        element.children().first().addClass('active');
+        $('.carousel').carousel();
+    }
+
+    activateFistItemInCarrousel();
+</script>

@@ -1,0 +1,10 @@
+<div data-sly-use.logic="com.tcblog.core.models.CategoryItems">
+    <h1>${logic.title}</h1>
+
+    <div class="divider"></div>
+
+    <div data-sly-repeat="${logic.items}">
+        <h4>${item.title}</h4>
+        <h5>${item.created}</h5>
+    </div>
+</div>

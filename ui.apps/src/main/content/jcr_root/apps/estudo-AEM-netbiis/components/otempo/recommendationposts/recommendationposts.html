@@ -1,7 +1,7 @@
 <div class="cmp-recommendation">
-    <h1>Title</h1>
+    <h1>Recomendações:</h1>
 
-    <div class="news-view" data-sly-use.logic="apps.tcblog.components.recommendationposts.logic.RecommendationPostsLogic">
+    <div class="news-view" data-sly-use.logic="apps.tcblog.components.otempo.recommendationposts.logic.RecommendationPostsLogic">
         <div data-sly-repeat="${logic.postInfoList}">
             <a href="${item['href']}"> ${item['subtitulo'] ? item['subtitulo'] : "Test"} </a>
             <h5>${item['createdAt']}</h5>

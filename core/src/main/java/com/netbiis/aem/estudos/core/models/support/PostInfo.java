@@ -1,9 +1,39 @@
 package com.tcblog.core.models.support;
 
+import java.util.Date;
+
+import com.day.cq.wcm.api.Page;
+
 public class PostInfo {
     private String title;
     private String subtitle;
     private String texto;
+    private Date created;
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    static public PostInfo fromPage(Page page) {
+        String contentPath = "root/container/container/post";
+
+        Date date = page.getProperties().get("jcr:created", Date.class);
+        String title = page
+            .getContentResource(contentPath)
+            .getValueMap()
+            .get("titulo", String.class);
+
+        PostInfo postInfo = new PostInfo();
+
+        postInfo.setCreated(date);
+        postInfo.setTitle(title);
+
+        return postInfo;
+    }
 
     public PostInfo() {};
 
