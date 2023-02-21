@@ -22,10 +22,10 @@ public class InfoPage {
 
     public InfoPage(Page page){
         ValueMap pageProperties = page.getProperties();
-        setTitle(pageProperties.get("jcr:title", String.class));
+        setTitle(page.getTitle());
         setCreatedBy(pageProperties.get("jcr:createdBy", String.class));
         setDate(pageProperties.get("jcr:created",Date.class));
-        setPath(pageProperties.get("tree", String.class));
+        setPath(page.getPath());
         setTags(pageProperties.get("cq:tags", String.class));
     }
 

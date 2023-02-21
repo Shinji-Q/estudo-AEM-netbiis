@@ -36,6 +36,7 @@ public class ReadMore {
     private List<InfoPage> listInfoPages = new ArrayList<InfoPage>();
 
     private List<Page> listPages = new ArrayList<Page>();
+
     @PostConstruct
     protected void init(){
         
@@ -87,7 +88,5 @@ public class ReadMore {
     public List<Page> getListPages() {
         return listPages;
     }
-
-    
     
 }

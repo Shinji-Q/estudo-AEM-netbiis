@@ -2,7 +2,7 @@
     <h1>${properties.title}</h1>
 
     <div data-sly-list.page="${model.listInfoPages}">
-        <h3>${page.title}</h3>
+        <a href="${page.path}.html">${page.title}</a>
         <p>
                 ${page.createdBy}
         </p>
