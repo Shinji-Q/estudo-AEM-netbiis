@@ -1,18 +1,16 @@
 <div data-sly-use.model="com.adobe.aem.guides.wknd.core.models.ReadMore">
-    <h1>${properties.title}</h1>
+  <h1>${properties.title}</h1>
 
-    <div data-sly-list.page="${model.listInfoPages}">
-        <a href="${page.path}.html">${page.title}</a>
-        <p>
-                ${page.createdBy}
-        </p>
-        <p>
-                ${page.date}
-        </p>
-        <hr>
-    </div>
+  <div data-sly-list.page="${model.listInfoPages}">
+    <a href="${page.path}.html">
+      <h3>${page.title}</h3>
+      <p>${page.createdBy}</p>
+      <p>${page.date}</p>
+    </a>
+      <hr />
+  </div>
 
-    <ul data-sly-list.page="${model.listPages}">
-        <li>${page.properties}</li>
-    </ul>
+  <!--/* <ul data-sly-list.page="${model.listPages}">
+    <li>${page.properties}</li>
+  </ul> */-->
 </div>
