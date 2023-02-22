@@ -1,4 +1,4 @@
-package com.tcblog.core.models;
+package com.netbiis.aem.estudos.core.models;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.tcblog.core.models.implementation;
+package com.netbiis.aem.estudos.core.models.implementation;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,7 +10,7 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 
-import com.tcblog.core.models.PhotosGallery;
+import com.netbiis.aem.estudos.core.models.PhotosGallery;
 
 @Model(adaptables = Resource.class, adapters = PhotosGallery.class)
 public class PhotosGalleryImpl implements PhotosGallery {

@@ -1,4 +1,4 @@
-package com.tcblog.core.models.implementation;
+package com.netbiis.aem.estudos.core.models.implementation;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -20,8 +20,8 @@ import com.day.cq.tagging.Tag;
 import com.day.cq.tagging.TagManager;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
-import com.tcblog.core.models.CategoryItems;
-import com.tcblog.core.models.support.PostInfo;
+import com.netbiis.aem.estudos.core.models.CategoryItems;
+import com.netbiis.aem.estudos.core.models.support.PostInfo;
 
 @Model(adaptables = Resource.class, adapters = CategoryItems.class)
 public class CategoryItemsImpl implements CategoryItems {

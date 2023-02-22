@@ -1,4 +1,4 @@
-package com.tcblog.core.models.support;
+package com.netbiis.aem.estudos.core.models.support;
 
 import java.util.Date;
 

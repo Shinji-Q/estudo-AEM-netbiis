@@ -1,8 +1,8 @@
-package com.tcblog.core.models;
+package com.netbiis.aem.estudos.core.models;
 
 import java.util.List;
 
-import com.tcblog.core.models.support.PostInfo;
+import com.netbiis.aem.estudos.core.models.support.PostInfo;
 
 public interface CategoryItems {
     public List<PostInfo> getItems();
