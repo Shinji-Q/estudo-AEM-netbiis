@@ -1,0 +1,10 @@
+<div data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Modules">
+  <div data-sly-list.page="${model.pagePath}">
+    <h3>${properties.title ? properties.title : page.title}</h3>
+    <p>${page.date}</p>
+    <p>${page.path}</p>
+    <a href="${page.path}.html">
+      <input type="button" value="Ler Mais" />
+    </a>
+  </div>
+</div>
