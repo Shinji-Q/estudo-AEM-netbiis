@@ -1,3 +1,5 @@
 package com.netbiis.aem.estudos.core.models;
 
-public interface VideoBox {}
+public interface VideoBox {
+    String getLog();
+}

@@ -1,0 +1,11 @@
+<div data-sly-use.readMore="com.tcblog.core.models.ReadMore"></div>
+
+<div>
+    <h1>Leia mais!</h1>
+
+    <ol>
+        <li data-sly-repeat="${readMore.readMoreInfo}">
+            <a href="${item.path}.html">${item.title}</a>
+        </li>
+    </ol>
+</div>
