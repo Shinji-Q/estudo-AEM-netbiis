@@ -26,6 +26,13 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                         fieldLabel="Title Here"
                                         name="./title"/>
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldDescription="Informe o caminho da página."
+                                        fieldLabel="Página"
+                                        name="./path"
+                                        rootPath="/content/wknd/us/en/"/> 
                                     <accordion
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
