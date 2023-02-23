@@ -42,12 +42,7 @@ public class Modules {
 
     @PostConstruct
     protected void init() {
-
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
-
-        Page thiPage = currentResource.getResourceResolver().adaptTo(PageManager.class).getPage(path);
-
-        pagePath = new InfoPage(thiPage);
 
         Page currentPagePath = Optional.ofNullable(pageManager)
                 .map(pm -> pm.getContainingPage(currentResource))
@@ -56,6 +51,16 @@ public class Modules {
         Page pathPage = Optional.ofNullable(pageManager)
         .map(pm -> pm.getContainingPage(currentResource))
         .orElse(null);
+
+        try {
+        Page thiPage = currentResource.getResourceResolver().adaptTo(PageManager.class).getPage(path);
+
+        pagePath = new InfoPage(thiPage);
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+
+        }
     }
 
     public InfoPage getPagePath(){
