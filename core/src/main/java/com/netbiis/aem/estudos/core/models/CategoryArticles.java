@@ -18,9 +18,6 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 
 
 
-import com.day.cq.wcm.api.PageManager;
-import com.adobe.cq.wcm.core.components.models.Image;
-import com.day.cq.commons.ImageHelper;
 import com.day.cq.wcm.api.Page;
 
 import javax.annotation.PostConstruct;
